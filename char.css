@@ -1,0 +1,80 @@
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+div#L {
+    height: 100%;
+    width: 400px;
+    background-color: rgb(230,230,230);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+div.static-block {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(240,240,240);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    user-select: none;
+}
+
+div.carry {
+    position: fixed;
+    z-index: 10;
+    opacity: 0.75;
+}
+
+div.static-block:hover {
+    cursor: pointer;
+}
+
+div#R {
+    height: 100%;
+    flex: 1;
+    background-color: rgb(240,240,240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div#board-container {
+    background-image: url('board.svg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+div.bucket {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+div.bucket:hover {
+    cursor: pointer;
+}
+
+input#add-input {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+}

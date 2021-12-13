@@ -1,0 +1,45 @@
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+div#L {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(230,230,230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#R {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(240,240,240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#board-img {
+    width: calc(80% - 40px);
+    height: calc(80% - 40px);
+    margin: 20px;
+    object-fit: contain;
+}
+
+div#paragraph {
+    width: 90%;
+    max-width: 500px;
+    font-family: 'Open Sans';
+}
